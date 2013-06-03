@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<users>
+        <user>
+              <name>jordan</name>
+              <alias>JordanHeemskerk</alias>
+              <pass>daa2f6dae68ed3bf3d499f4366f8376e</pass>
+        </user>
+        <user>
+              <name>trevor</name>
+              <alias>TrevorLainchbury</alias>
+              <pass>2cbdaf9ce47a2c4adbd1fd578a192c58</pass>
+        </user>
+        <user>
+              <name>naz</name>
+              <alias>NazKhedri</alias>
+              <pass>14d96fe9518e840aa16fbdebc7b5e3df</pass>
+        </user>
+		<user>
+              <name>test</name>
+              <alias>TestAccount</alias>
+              <pass>2a4047667f30872f6df5b99ee4594ebd</pass>
+        </user>
+
+
+
+
+</users>

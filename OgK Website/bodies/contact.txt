@@ -1,0 +1,18 @@
+<div style="float: right; ">
+<a href="http://www.twitter.com/origkuruption"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" style="margin-left: auto; margin-right: auto;" alt="Follow origkuruption on Twitter"/></a><br />
+<br /><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FOriginal-Kuruption%2F149429638407919%3Fcreated&amp;layout=standard&amp;show_faces=false&amp;width=200&amp;action=like&amp;font=verdana&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:50px;" allowTransparency="true"></iframe>
+</div>
+<h1>Contact Us</h1>
+<div>
+<a href="mailto:ogkclothing@gmail.com">Email Us: ogkclothing@gmail.com</a>
+
+<h2>Trevor Lainchbury</h2>
+<p>250.514.2405</p>
+<h2>Naz Khedri</h2>
+<p>250.857.1430</p>
+<h2>Jordan Heemskerk</h2>
+<p>250.857.0853</p>
+<h1>Special Thanks To</h1>
+<h2>Matteo Qualizza</h2>
+<p>For his photography expertise. Many photos on this website were taken by him. If you are intrested in his services you may reach him at <a href="mailto:matteo.qualizza@gmail.com">matteo.qualizza@gmail.com</a>. Thank You Matteo.</p>
+</div>

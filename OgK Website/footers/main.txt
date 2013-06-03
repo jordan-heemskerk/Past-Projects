@@ -1,0 +1,24 @@
+
+    <div  class="footer">
+Site Designed By Heemskerk Studios| &copy; 2010 OGK Clothing | <span class="smallLink"  onclick="goToAdmin()">Administration</span>
+</div>
+  <div id= "loginBox" class="loginBox">
+<h3>Administrator Login</h3>
+
+<form action="admin.php" method="POST"  onsubmit="return checkAdmin(this)">
+
+    Username:
+    <input type="text" name="username"/><br />
+    Password:
+    <input type="password" id="password" name="password" /><br />
+    <input type="submit" />
+    <button type="button" onclick="cancelButton()">Cancel</button>
+</form>
+</div>
+<div id="darkenBackground" class="darkenBackground">
+</div>
+  </body>
+
+
+
+</html>

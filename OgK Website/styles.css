@@ -1,0 +1,389 @@
+body {
+background-color: black;
+margin: 0px;
+padding: 0px;
+color: white;
+text-align: center;
+font-family: Century Gothic, sans-serif;
+
+scrollbar-base-color:#BBBBBB;
+
+}
+
+.logo {
+float: left;
+}
+.cart {
+margin-top: 20px;
+float: right;
+width: 150px;
+text-align: left;
+padding: 3px;
+border: 1px solid white;
+background-color: white;
+color: black;
+position:fixed;
+right: 0;
+top: 200px;
+}
+
+.findUs {
+ margin-top: 20px;
+float: left;
+width: 200px;
+text-align: left;
+padding: 3px;
+border: 1.5px dashed grey;
+border-left:none;
+background-color: black;
+color: black;
+position:fixed;
+left: 0;
+top: 200px;
+height: 250px;
+padding-left: 10px;
+
+
+
+
+}
+.banner {
+
+ margin-left: auto;
+ margin-right: auto;
+ width: 950px;
+  padding-top: 5px;
+font-size: 50px;
+margin-bottom: 0px;
+display: block;
+}
+
+.top {
+   height: 250px;
+   background-color: black;
+   margin-bottom: 0px;
+
+
+}
+h2 {
+color: red;
+}
+
+.main {
+
+margin-left: auto;
+margin-right: auto;
+padding-left: 10px;
+padding-right: 10px;
+/*background-image:url('img/main_background.jpg');
+background-repeat:repeat;    */
+text-align: justify;
+font-family: Century Gothic, sans-serif;
+padding: 10px;
+font-size: 12px;
+width: 900px;
+border-left: 1.5px solid grey;
+border-right: 1.5px solid grey;
+border-top: 1.5px solid grey;
+
+}
+.changing {
+ margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+
+height: 304px;
+}
+
+
+.whatsNewPic {
+float: left;
+
+}
+
+img {
+border: none; 
+
+}
+
+
+
+
+.footer {
+  margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   margin-top: 0px;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 10px;
+   width: 500px;
+
+}
+
+.menu {
+  background-image: url('img/top.gif');
+   background-repeat:repeat-x;
+  margin-top: 0px;
+  height: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  margin-bottom: 10px;
+ padding-bottom: 5px;
+ padding-top: 2px;
+
+
+
+
+}
+.menuLinks {
+margin-right: auto;
+margin-left: auto;
+width: 800px;
+
+}
+
+.menuLink {
+   font-size: 20px;
+   color: white;
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   text-decoration: none;
+   font-weight: bold;
+   margin-left: 20px;
+   margin-right: 20px;
+
+
+}
+
+.menuLink:hover {
+   color: #BBBBBB;
+
+}
+
+.fb {
+   float: right;
+   padding: 10px;
+
+
+
+}
+
+.cartLink {
+font-family: Verdana;
+font-size: 10px;
+color: black;
+text-decoration: none;
+font-weight: bold;
+
+}
+
+.cartLink:hover {
+    text-decoration: underline;
+}
+
+.loginBox {
+   display: none;
+   visibility: hidden;
+   position: fixed;
+   top: 40%;
+   margin-left: 40%;
+   width: 300px;
+   background-color: white;
+   z-index: 50;
+   padding: 10px;
+   font-family: Verdana, Geneva, sans-serif;
+   color: black;
+
+}
+
+.addressBox {
+   display: none;
+   visibility: hidden;
+   position: fixed;
+   margin-left: 325px;
+   margin-right: 325px;
+   top: 100px;
+   background-color: white;
+   z-index: 49;
+   padding: 10px;
+   font-family: Verdana, Geneva, sans-serif;
+   color: black;
+   font-size: 11pt;
+
+}
+
+.darkenBackground {
+background-color: rgb(0, 0, 0);
+opacity: 0.7; /* Safari, Opera */
+-moz-opacity:0.70; /* FireFox */
+filter: alpha(opacity=70); /* IE */
+z-index: 20;
+height: 100%;
+width: 100%;
+background-repeat:repeat;
+position:fixed;
+top: 0px;
+left: 0px;
+display: none;
+}
+.smallLink {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.toggable {
+   display: none;
+}
+.toggableLink {
+   cursor: pointer;
+}
+.toggableLink:hover {
+
+   color: #BBBBBB;
+}
+
+.productImage {
+
+float: right;
+}
+
+.product {
+
+ padding-right: 10px;
+ padding-left: 10px;
+  border: 1px solid white;
+height: 200px;
+}
+
+.adminProduct {
+ padding-right: 10px;
+ padding-left: 10px;
+  border: 1px solid white;
+  height: 200px;
+  overflow: scroll;
+
+}
+.productLink {
+    cursor: pointer;
+
+
+    font-size: 15px;
+}
+
+.productLink:hover {
+   color: #BBBBBB;
+}
+.scroll {
+
+  padding: 30px;
+overflow: scroll;
+overflow-y: hidden;
+width: 720px;
+float: right;
+height: 250px;
+/*float: right;*/
+left: 40%;   
+
+
+
+
+}
+
+.productIcons {
+
+ padding-right: 20px;
+ padding-left: 20px;
+
+height: 200px;
+
+
+
+
+}
+
+.productIcon {
+
+  padding-right: 10px;
+ padding-left: 10px;
+ margin-right: 10px;
+ margin-left: 10px;
+ cursor: pointer;
+  text-align: center;
+ float: left;
+
+
+
+}
+
+.productIconInfo {
+  display: none;
+}
+
+
+.productMenu {
+  padding-top: 30px;
+  height: 260px;
+  width: 90px;
+  float: left;
+
+}
+
+h1 {
+
+margin-top: 0px;
+padding-top: 0px;
+}
+
+.cartTable,th,td {
+border: 1px solid white;
+width: 900px;
+text-align: center;
+border-collapse:collapse;
+}
+
+.adminTR {
+  font-family: Century Gothic, sans-serif;
+border: none;
+font-size: 12px;
+text-align: center;
+
+
+
+}
+
+
+p {
+    text-align: justify;
+
+}
+
+.quote {
+width: 250px;
+color: red;
+float: right;
+padding: 20px;
+margin: 10px;
+}
+
+.whatsNew {
+
+   padding: 10px;
+
+}
+
+.floatRight {
+float: right;
+width: 250px;
+padding: 0px;
+}
+
+.bannerImages {
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+
+}
+

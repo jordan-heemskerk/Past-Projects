@@ -1,0 +1,180 @@
+
+<h1>Tasks</h1>
+<p>Name of the game: if you don't know how to use something, don't and ask Jordan first.</p>
+<p><strong>IMPORTANT: Never close the page, type in a new URL or leave this page open without LOGGING OUT!</strong></p>
+
+<div style="border: 1px solid white; padding: 5px;">
+<h2 class="toggableLink" onclick="toggle('Transaction Tasks', this)"> + Transaction Tasks</h2>
+
+<div class="toggable" id='Transaction Tasks'>
+<h3>Create Transactions</h3>
+<p>Enter a new transactions for our digital records. Begin by choosing the date of the transaction. Then begin entering a product id, the fancy program will help you :). Enter the quantity of that product you'd like to add. An "add" button will appear when you have a correct ID number for a product. Click it, and that product and quantity will be added to "the cart". Click submit when you have added all the items of the transaction and it will be recorded! </p>
+<form  enctype="multipart/form-data" id="txnForm" action="adminTask.php" method="POST">
+
+Transaction Date:
+<select id="daydropdown" name="txnDateDay">
+</select> 
+<select id="monthdropdown" name="txnDateMonth">
+</select>
+<select id="yeardropdown" name="txnDateYear">
+</select>
+<script type="text/javascript">
+populatedropdown("daydropdown", "monthdropdown", "yeardropdown");
+</script>
+<br />
+Quantity: <input type="text" name="quantity" value="1" id="quantity" size="2" maxlength="2" />
+<br />
+Enter a Product ID: <input type="text" name="id" id="idEnter" onkeyup="searchProductsForID()" /> You have: <span id="sug"></span>
+<br />
+<div id="itemContainer">
+<table id="itemTable">
+
+<tr>
+<th>Name</th>
+<th>ID</th>
+<th>Quantity</th>
+<th>Item Price</th>
+<th>Item Gross</th>
+</tr>
+
+</table>
+</div>
+<input type="hidden" id="numItems" value="0" />
+<input type="hidden" name="task" value="createNewTxn" />
+<input type="submit" name="submit" />
+</form>
+
+<h3>Transaction Query</h3>
+<p>View transactions and specify what you want to view about them. Also select to view certain stats at the top of the page.</p>
+<form action="adminTask.php" method="POST" >
+View Transactions from
+<select id="daydropdown2" name="startDateDay">
+</select> 
+<select id="monthdropdown2" name="startDateMonth">
+</select>
+<select id="yeardropdown2" name="startDateYear">
+</select>
+<script type="text/javascript">
+populatedropdown("daydropdown2", "monthdropdown2", "yeardropdown2");
+</script>
+to
+<select id="daydropdown3" name="endDateDay">
+</select>
+<select id="monthdropdown3" name="endDateMonth">
+</select>
+<select id="yeardropdown3" name="endDateYear">
+</select>
+<script type="text/javascript">
+populatedropdown("daydropdown3", "monthdropdown3", "yeardropdown3");
+</script>
+. <br />
+Include:<br />
+<input type="checkbox" name="date" value="true"/> Date of Transaction <br/>
+<input type="checkbox" name="txnType" value="true"/> Transaction Type <br />
+<input type="checkbox" name="txnTotal" value="true"/> Transaction Total <br />
+<input type="checkbox" name="items" value="true"/> Items Bought <br />
+
+Include(only for PayPal txn's):<br />
+<input type="checkbox" name="name" value="true"/> Name <br/>
+<input type="checkbox" name="address" value="true"/> Address <br />
+
+
+Show at top: <br />
+<input type="checkbox" name="showTotal" value="true"/> Total Income <br />
+
+<input type="hidden" name="task" value="txnQuery" /><br />
+
+Sort By: <br />
+<select name="sortBy">
+<option value="newtoold">Newest to Oldest</option>
+<option value="oldtonew">Oldest to Newest</option>
+<option value="numItems">Most Number of Items</option>
+<option value="Htotal">Highest Total</option>
+<option value="Ltotal">Lowest Total</option>
+</select> <br />
+        <input type="submit" name="submit" />
+ </form>
+</div>
+
+
+<h2 class="toggableLink" onclick="toggle('News Tasks', this)"> + News Tasks</h2>
+
+<div class="toggable" id='News Tasks'>
+<h3>Create News</h3>
+<p>Enter a Title, Body, and attach an image if you desire. Seperate Paragraphs with new lines.</p>
+<form  enctype="multipart/form-data" action="adminTask.php" method="POST">
+Title:
+<input type="text" name="title"  />
+<br />
+Optional Image Attatchment(Must be 100 x 100 pixels. DOUBLE CHECK THIS.):
+<input type="file" name="image" style="background-color: white;"/><br />
+Body of News:
+<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+<br / >
+<textarea rows="10" style="overflow: auto;" cols="90" name="body">Enter Body Here</textarea>  <br />
+<input type="hidden" name="task" value="createNewNews" />
+<input type="submit" name="submit" />
+</form>
+</div>
+
+
+<h2 class="toggableLink" onclick="toggle('Email Tasks', this)"> + Email Tasks</h2>
+
+<div class="toggable" id='Email Tasks'>
+<h3>Send An Email</h3>
+<p>Enter the body of the message in HTML form. Get the email template <span style="cursor:pointer;" onclick="window.open('email.html')"><u>here</u></span>. </p>
+<form  enctype="multipart/form-data" action="adminTask.php" method="POST">
+Subject:
+<input type="text" name="subject"  />
+<br />
+Body of News (in HTML):
+
+<br / >
+<textarea rows="10" style="overflow: auto;" cols="90" name="body">Enter Body Here (in HTML)</textarea>  <br />
+<input type="hidden" name="task" value="sendEmail" />
+<input type="submit" name="submit" />
+</form>
+</div>
+
+
+
+<h2 class="toggableLink" onclick="toggle('Search For A Product', this)"> + Search For A Product</h2>
+<div class="toggable" id='Search For A Product'>
+<p>Search for a product. Enter a Product ID Number, Name, Price, Category, Color or Sex. To view all products enter "!all"</p>
+<form  action="adminTask.php" method="POST">
+Search: &nbsp;
+<input type="text" name="key"  />
+<input type="hidden" name="task" value="searchForProduct" />
+<input type="submit" name="submit" />
+
+</form>
+
+</div>
+
+
+<h2 class="toggableLink" onclick="toggle('Change My Password', this)"> + Change My Password</h2>
+<div class="toggable" id='Change My Password'>
+<form action="adminTask.php" method="POST" onsubmit="javascript: return changePass(this)">
+Old Password: <input type="password" name="oldPassword" />
+New Password<input type="password" name="newPassword" />
+Confirm New Password<input type="password" name="confirmPassword" />
+<input type="hidden" name="task" value="changePassword" />
+<input type="submit" name="submit" />
+
+</form>
+</div>
+
+<h2 class="toggableLink" onclick="toggle('Update Product Catalog', this)"> + Update Product Catalog</h2>
+
+<div class="toggable" id='Update Product Catalog'>
+<p>Choose a Comma Seperated Values ASCII Text File to upload. This is then converted using PHP to an XML File and then replaces xml/products.xml.</p>
+<form enctype="multipart/form-data" action="adminTask.php" method="POST">
+<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+Choose CSV File: &nbsp; 
+<input type="file" name="url" style="background-color:white;" />
+<input type="hidden" name="task" value="updateProductCatalog" />
+<input type="submit" name="submit" />
+
+</form>
+</div>
+</div>

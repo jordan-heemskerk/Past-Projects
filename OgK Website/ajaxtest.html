@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function findProduct(key) {
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.open("GET","findProduct.php?key="+key,false);
+xmlhttp.send();
+
+document.getElementById("shoot").innerHTML=xmlhttp.responseText;
+
+
+
+
+
+}
+
+function searchProductsForID() {
+form = document.getElementById("txnFindProduct");
+key = form.id.value;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.open("GET","findProduct.php?key="+key+"&info=id",false);
+xmlhttp.send();
+
+document.getElementById("sug").innerHTML = xmlhttp.responseText;
+
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+<p onclick="findProduct('whoooot')">CLICK</p>
+<div id="shoot">
+yes
+</div>
+
+<form method="POST" action="adminTask.php" id="txnFindProduct">
+Enter a Product ID: <input type="text" name="id" onkeyup="searchProductsForID()" /> You have: <span id="sug"></span>
+
+
+</form>
+
+
+</body>
+</html>

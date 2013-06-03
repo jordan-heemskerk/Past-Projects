@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<transaction>
+  <date>15:11:59 Oct 10, 2010 PDT</date>
+  <txn_total>15.34</txn_total>
+  <profit>14.9</profit>
+  <items>
+    <item>
+      <name>something</name>
+      <id>AK-1234</id>
+      <item_gross>12.34</item_gross>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <first_name>John</first_name>
+  <last_name>Smith</last_name>
+  <phone></phone>
+  <address>
+    <country>Canada</country>
+    <city>Victoria</city>
+    <state>British Columbia</state>
+    <street>4415 asdfasdf</street>
+    <zip>V8N2R2</zip>
+    <name>Smith, John</name>
+  </address>
+</transaction>

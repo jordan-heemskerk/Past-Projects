@@ -1,0 +1,16 @@
+<script>
+    Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.js');
+</script>
+
+<div id="gallery" >
+  <img src="img/pic1.png" width="800"/>
+  <img src="img/pic2.png" width="800"/>
+
+
+</div>
+
+
+
+<script>
+    $('#gallery').galleria();
+</script>

@@ -1,0 +1,104 @@
+Poker Resources
+
+Things to know:
+       
+       Cards
+
+            A card has two indentifiers, a value and a suit. The object "Card" has two values, value and suit.
+            To "make" a card: Card "name of card" = new Card(value, suit);
+            To "make" a group of cards: Card[] "name of group of cards" = new Card["number of cards in the group"];
+            For more on object orientated programming visit: http://www.mdinfotech.net/resources/javaforstudents/car.html
+
+        Hands
+
+             To create a hand use the following code:
+                (a)   Card[] playerHand = new Card[5];
+                (b)   playerHand = Hand.makeHand(Deck.dealCard(), Deck.dealCard(), Deck.dealCard(), Deck.dealCard(), Deck.dealCard(), "Player");
+             The first line (a), creates a new Card(object) array of 6 cards (playerHand[0], playerHand[1], and so on).
+             The second hand accessess a method in Hand called makeHand, this takes in 5 cards and a string.
+             The String, is the players name, whether it be "PLayer1" or "Computer1"
+             The method dealCard(), located in Deck, takes one card out of a deck and returns it, for more on this look under Method, Deck.java, Card dealCard().
+
+        Deck
+
+            At the start of each game, in the main method use the following line to create a new deck.
+               (a)Deck gameDeck = new Deck();
+            This creates a new deck, known as gameDeck, in our example.
+            Now call this method to make the cards, think of the other line of merely the card box, this is putting the cards in the box.
+                (a) gameDeck.createNewDeck();
+            This make a array or "group" of cards in the "box" gameDeck, the cards are made in order so....
+            Finally, make sure you shuffle, lolz, use this line to reorder the cards:
+                (a) gameDeck.shuffle();
+            How to get a card:
+                Deck.dealCard()
+            Returns a card, this method when updated takes the card "on the virtual top" of the deck, and "gives" it to you, also note, if
+            you take a look at the method in the Deck class, you will notice that it take away one from the integer cardsUsed.
+
+        Images
+              Use the following code to import images:
+                  Toolkit tk = Toolkit.getDefaultToolkit();
+              You should kinda understand what this means by now or you are gunna fail.
+              Define the following BEFORE your main method, or any other methods, in other words directly
+              in your class:
+                 static Image pic;
+              Finally to chose what image you want to use:
+                      pic = tk.getImage("nameOfFile.jpg");
+              So thats how to import images. Visit the API for positioning and other such methods in TOOLKIT.
+              Get It??? Look under TOOLKIT in the API. Note that the getImage(fileName) method returns an IMAGE.
+         
+         AI (Artificial Intelligence)
+              
+              A method in Poker.java called getAIAction, will return an integer. This integer tells what the AI "wants" to do
+              This is the key:
+                   0 = fold
+                   1 = call
+                   2 = raise
+              So if you called the method and it returned 2, you should have your AI raise.
+              Also note that if an invalid calculation or an error happens the method will return a default of 4.
+
+
+Method List:
+
+       Card.java
+                 int[] getCardValue(Card card)
+                       takes a card and returns its value and suit in integer form, in an array.
+                       so int[0] = suit and int[1] = value of the card.
+                 String getCardStringValue(Card card)
+                        takes a card and returns a String describing its value such as "queen of hearts", later on we will use this method
+                        to access images of cards for our GUI, meaning if you have a picture of the queen of hearts, it would probably be named
+                        "queen of hearts.gif" or jpeg, or whatever we choose.
+       Deck.java
+                 void createNewDeck()
+                      takes nothing, returns nothing, but contains two for loops that create an ordered deck of cards. This works by making all the cards for suit "0",
+                      then making all the cards for the next suit and so on, see me(Jordan) if you want more detail.
+                 void shuffle()
+                      Again, takes nothing returns nothing, but contains the algorithm to cahnge the order of the cards.
+                 int cardsLeft()
+                     returns an integer showing how many cards are left in the deck, it gets this by subtracting the cardsUsed from 52.
+                 Card dealCard()
+                      takes nothing, but returns the Card(object) on the top of the "Deck".
+
+       Hand.java
+                String handStringValue(Card card, Card card2, Card card3, Card card4, Card card5, String playerName)
+                       returns a string of the cards values such as:
+                               playerName's hand consists of a ace of diamonds and a nine of clubs...
+                Card[] makeHand(Card card, Card card2, Card card3, Card card4, Card card5) 
+                       returns an array of cards or a "Hand" made from the five cards that are provided
+                int getHandLevel (Card[] hand)
+                    returns an integer representing the players hand level. The higher the number, the better the hand.
+                            Hand vs. Number:
+                                High Card = 0,
+                                Pair = 1,
+                                Two Pair = 2,
+                                Three of a kind = 3,
+                                Straight = 4,
+                                Flush = 5,
+                                Full House = 6,
+                                Four of a kind = 7,
+                                Straigh Flush = 8,
+                                Royal Flush = 9;
+                                
+       Thats all for now!!!
+
+
+

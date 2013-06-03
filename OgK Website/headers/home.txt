@@ -1,0 +1,95 @@
+<html>
+
+  <head>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19245374-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <script type="text/javascript" src="js/md5-min.js">
+  </script>
+
+
+   <script type="text/javascript" src="js/jquery.js">
+   </script>
+   
+   <script type="text/javascript" src="js/main.js">
+    </script>
+        <script type="text/javascript" >
+        $(document).ready(
+        function(){
+          changePicture();
+          setInterval("changeLogo()", 15000);
+          setInterval("changePicture()", 7500);
+
+        });
+        </script>
+
+  </head>
+
+  <body  bgcolor="black">
+   <div class="cart">
+        <img src="img/cart.jpg" style="float:right;margin: 0px; padding: 0px;" />
+        <div style="padding-left: auto; padding-right:auto;">
+        <span style="font-size:10px; margin:0px; padding:0px;"><?php echo count($_SESSION['cart']) ?> items in cart</span>
+        </div>
+         <div style="margin-left: auto; margin-right:auto;">
+        <a class="cartLink" href="viewCart.php">View Cart</a>
+        
+      </div>
+      
+      </div>
+      
+        <!-- <div class="findUs">
+
+           <div style="font-size: 12pt; font-family: Century Gothic, sans-serif; font-weight: bold; text-align: center; color: red; padding: 0px; margin: 0px;">Communicate</div><br /><br/>
+          <br />
+
+<a href="http://www.twitter.com/origkuruption"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" style="margin-left: auto; margin-right: auto;" alt="Follow origkuruption on Twitter"/></a><br />
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FOriginal-Kuruption%2F149429638407919&amp;layout=button_count&amp;show_faces=true&amp;width=150&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>
+      <br /> <br /><br /><br /><a style="color: #3399CC; font-size: 10pt;" href="addMe.php">Add yourself to our email list!</a>
+
+      
+      </div>-->
+    <div class="top">
+    <div class="bannerImages">
+    <div class="logo">
+         <a href="index.php" border="0"><img  src="img/test1.png" width="100px" style="margin-top: 30px; margin-left: 55px;"  /> </a>
+        </div>
+
+
+    <a href="index.php" border="0"><img src="img/origKuru2.gif"  style="margin-right: auto; margin-left: 90px; width: 700px;"/></a>
+    <a href="index.php" border="0"><img src="img/test3.png" width="130px" style="margin-left: 80px; margin-bottom: 50px;" /></a>
+    </div>
+    <div class="menu">
+      <div class="menuLinks">
+       <a href="index.php" class="menuLink">Home</a>
+       <a href="news.php" class="menuLink">News</a>
+       <a href="viewProducts.php?filter=2" class="menuLink">Guys</a>
+       <a href="viewProducts.php?filter=1" class="menuLink">Girls</a>
+       <a href="gallery.php" class="menuLink">Gallery</a>
+      <a href="media.php" class="menuLink">Media</a>
+       <a href="about.php" class="menuLink">About</a>
+       <a href="contact.php" class="menuLink">Contact</a>
+       </div>
+    </div>
+
+
+
+        </div>
+
+
+
+
+  

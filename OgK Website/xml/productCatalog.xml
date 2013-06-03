@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<products>
+  <product>
+    <name>OGK Fade</name>
+    <category num="1">Tees</category>
+    <sex num="1">Girls</sex>
+    <id>0101020101</id>
+    <size num="1">XS</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01010201.txt</descriptionLocation>
+    <imageLocation>img/products/01010201.gif</imageLocation>
+    <sell>No</sell>
+    <color>Pink</color>
+  </product>
+  <product>
+    <name>OGK Fade</name>
+    <category num="1">Tees</category>
+    <sex num="1">Girls</sex>
+    <id>0101020102</id>
+    <size num="2">S</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01010201.txt</descriptionLocation>
+    <imageLocation>img/products/01010201.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Pink</color>
+  </product>
+  <product>
+    <name>OGK Fade</name>
+    <category num="1">Tees</category>
+    <sex num="1">Girls</sex>
+    <id>0101020103</id>
+    <size num="3">M</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01010201.txt</descriptionLocation>
+    <imageLocation>img/products/01010201.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Pink</color>
+  </product>
+  <product>
+    <name>OGK Fade</name>
+    <category num="1">Tees</category>
+    <sex num="1">Girls</sex>
+    <id>0101020104</id>
+    <size num="4">L</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01010201.txt</descriptionLocation>
+    <imageLocation>img/products/01010201.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Pink</color>
+  </product>
+  <product>
+    <name>OGK Classic</name>
+    <category num="1">Tees</category>
+    <sex num="2">Guys</sex>
+    <id>0102030102</id>
+    <size num="2">S</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01020301.txt</descriptionLocation>
+    <imageLocation>img/products/01020301.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Classic</name>
+    <category num="1">Tees</category>
+    <sex num="2">Guys</sex>
+    <id>0102030103</id>
+    <size num="3">M</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01020301.txt</descriptionLocation>
+    <imageLocation>img/products/01020301.gif</imageLocation>
+    <sell>No</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Classic</name>
+    <category num="1">Tees</category>
+    <sex num="2">Guys</sex>
+    <id>0102030104</id>
+    <size num="4">L</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01020301.txt</descriptionLocation>
+    <imageLocation>img/products/01020301.gif</imageLocation>
+    <sell>No</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Classic</name>
+    <category num="1">Tees</category>
+    <sex num="2">Guys</sex>
+    <id>0102030105</id>
+    <size num="5">XL</size>
+    <price>24.50</price>
+    <descriptionLocation>productDescription/01020301.txt</descriptionLocation>
+    <imageLocation>img/products/01020301.gif</imageLocation>
+    <sell>No</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Cross</name>
+    <category num="3">Crews</category>
+    <sex num="2">Guys</sex>
+    <id>0302010102</id>
+    <size num="2">S</size>
+    <price>37.50</price>
+    <descriptionLocation>productDescription/03020101.txt</descriptionLocation>
+    <imageLocation>img/products/03020101.gif</imageLocation>
+    <sell>No</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Cross</name>
+    <category num="3">Crews</category>
+    <sex num="2">Guys</sex>
+    <id>0302010103</id>
+    <size num="3">M</size>
+    <price>37.50</price>
+    <descriptionLocation>productDescription/03020101.txt</descriptionLocation>
+    <imageLocation>img/products/03020101.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Cross</name>
+    <category num="3">Crews</category>
+    <sex num="2">Guys</sex>
+    <id>0302010104</id>
+    <size num="4">L</size>
+    <price>37.50</price>
+    <descriptionLocation>productDescription/03020101.txt</descriptionLocation>
+    <imageLocation>img/products/03020101.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Cross</name>
+    <category num="3">Crews</category>
+    <sex num="2">Guys</sex>
+    <id>0302010105</id>
+    <size num="5">XL</size>
+    <price>37.50</price>
+    <descriptionLocation>productDescription/03020101.txt</descriptionLocation>
+    <imageLocation>img/products/03020101.gif</imageLocation>
+    <sell>No</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Neon</name>
+    <category num="2">Hoodies</category>
+    <sex num="2">Guys</sex>
+    <id>0202010102</id>
+    <size num="2">S</size>
+    <price>44.50</price>
+    <descriptionLocation>productDescription/02020101.txt</descriptionLocation>
+    <imageLocation>img/products/02020101.gif</imageLocation>
+    <sell>No</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Neon</name>
+    <category num="2">Hoodies</category>
+    <sex num="2">Guys</sex>
+    <id>0202010103</id>
+    <size num="3">M</size>
+    <price>44.50</price>
+    <descriptionLocation>productDescription/02020101.txt</descriptionLocation>
+    <imageLocation>img/products/02020101.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Neon</name>
+    <category num="2">Hoodies</category>
+    <sex num="2">Guys</sex>
+    <id>0202010104</id>
+    <size num="4">L</size>
+    <price>44.50</price>
+    <descriptionLocation>productDescription/02020101.txt</descriptionLocation>
+    <imageLocation>img/products/02020101.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Black</color>
+  </product>
+  <product>
+    <name>OGK Neon</name>
+    <category num="2">Hoodies</category>
+    <sex num="2">Guys</sex>
+    <id>0202010105</id>
+    <size num="5">XL</size>
+    <price>44.50</price>
+    <descriptionLocation>productDescription/02020101.txt</descriptionLocation>
+    <imageLocation>img/products/02020101.gif</imageLocation>
+    <sell>Yes</sell>
+    <color>Black</color>
+  </product>
+</products>

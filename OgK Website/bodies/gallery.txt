@@ -1,0 +1,22 @@
+
+<script>
+    Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.js');
+</script>
+
+<div id="gallery" >
+  <img src="img/products/01010201.gif" />
+  <img src="img/products/02020101.gif" />
+  <img src="img/products/01020301.gif" />
+  <img src="img/products/03020101.gif" />
+  <img src="img/Iheartogkbutton2.jpg"  />
+  <img src="img/headphonesOGKSite2.jpg"  />
+  <img src="img/pic3.jpg" width="800"/>
+  <img src="img/pic2.jpg" width="800"/>
+
+</div>
+
+
+
+<script>
+    $('#gallery').galleria();
+</script>

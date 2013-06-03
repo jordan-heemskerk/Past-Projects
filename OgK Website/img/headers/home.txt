@@ -1,0 +1,63 @@
+<html>
+
+  <head>
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <script type="text/javascript" src="js/md5-min.js">
+  </script>
+
+
+   <script type="text/javascript" src="js/jquery.js">
+   </script>
+   
+   <script type="text/javascript" src="js/main.js">
+    </script>
+        <script type="text/javascript" >
+        $(document).ready(
+        function(){
+          changePicture();
+          setInterval("changeLogo()", 15000);
+          setInterval("changePicture()", 10000);
+
+        });
+        </script>
+
+  </head>
+
+  <body  bgcolor="black">
+    <div class="top">
+    <div class="logo">
+        <img id="logo" src="img/test1.png" width="50px"   />
+        </div>
+        <div class="cart">
+        <img src="img/cart.jpg" style="float:right;margin: 0px; padding: 0px;" />
+        <div style="padding-left: auto; padding-right:auto;">
+        <span style="font-size:10px; margin:0px; padding:0px;"><?php echo count($_SESSION['cart']) ?> items in cart</span>
+        </div>
+         <div style="margin-left: auto; margin-right:auto;">
+        <a class="cartLink" href="viewCart.php">View Cart</a>
+
+        </div>
+    </div>
+    <span class="banner"><img src="img/origKuru.gif" width="800"/></span>
+    <div class="menu">
+      <div class="menuLinks">
+       <a href="index.php" class="menuLink">Home</a>
+       <a href="news.php" class="menuLink">News</a>
+       <a href="viewProducts.php?filter=2" class="menuLink">Guys</a>
+       <a href="viewProducts.php?filter=1" class="menuLink">Girls</a>
+       <a href="index.php" class="menuLink">Gallery</a>
+       <a href="index.php" class="menuLink">About</a>
+       <a href="index.php" class="menuLink">Contact</a>
+       </div>
+    </div>
+
+
+
+    </div>
+
+
+  
